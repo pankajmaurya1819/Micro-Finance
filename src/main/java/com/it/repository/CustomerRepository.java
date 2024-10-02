@@ -14,7 +14,7 @@ import org.springframework.stereotype.Repository;
 import com.it.entity.Customer;
 
 import jakarta.transaction.Transactional;
-
+// code for custom repository
 @Repository
 public interface CustomerRepository extends JpaRepository<Customer, Integer> {
 

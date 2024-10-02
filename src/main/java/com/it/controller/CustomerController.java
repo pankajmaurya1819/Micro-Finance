@@ -40,7 +40,7 @@ import jakarta.servlet.http.HttpSession;
 
 @Controller
 public class CustomerController {
-
+// code for logger
 	Logger logger = LogManager.getLogger(CustomerController.class);
 
 	@Autowired
