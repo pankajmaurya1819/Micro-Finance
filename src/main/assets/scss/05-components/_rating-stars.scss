@@ -1,0 +1,31 @@
+/* 5.5 */
+/* Rating stars
+/* ========================================================================== */
+.rating {
+	unicode-bidi: bidi-override;
+	direction: rtl;
+	font-size: 14px;
+	text-align: left;
+	span {
+		&.star {
+			font-family: FontAwesome;
+			font-weight: normal;
+			font-style: normal;
+			display: inline-block;
+			&:hover {
+				cursor: pointer;
+			}
+			&:before {
+				content: "\f006";
+				padding-right: 5px;
+				color: #d3d3d3;
+			}
+		}
+	}
+}
+.rating span.star.active:before,
+  .rating span.star:hover:before,
+  .rating span.star:hover ~ span.star:before {
+	content: "\f005";
+	color: #3c3c3c;
+}

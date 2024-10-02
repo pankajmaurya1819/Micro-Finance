@@ -1,0 +1,87 @@
+/* Thumbnail counto
+/* ========================================================================== */
+.thumbnail {
+	&.thumbnail-counto {
+		.caption {
+			padding: 30px 20px;
+			text-align: center;
+		}
+		.caption-icon {
+			margin-bottom: 30px;
+			text-align: center;
+			color: #7f7f7f;
+			.fa {
+				font-size: 60px;
+			}
+		}
+		.caption-number {
+			font-size: 18px;
+			font-weight: 900;
+			font-family: 'Open Sans', sans-serif;
+			line-height: 18px;
+			margin-bottom: 10px;
+			text-transform: uppercase;
+			color: #7f7f7f;
+		}
+		.caption-title {
+			font-size: 13px;
+			font-weight: 900;
+			line-height: 13px;
+			margin-bottom: 0;
+			text-transform: uppercase;
+			color: #7f7f7f;
+		}
+	}
+}
+.thumbnail.thumbnail-counto.hover .caption-icon,
+  .thumbnail.thumbnail-counto:hover .caption-icon,
+  .thumbnail.thumbnail-counto.hover .caption-number,
+  .thumbnail.thumbnail-counto:hover .caption-number,
+  .thumbnail.thumbnail-counto.hover .caption-title,
+  .thumbnail.thumbnail-counto:hover .caption-title {
+	color: var(--bs-primary);
+}
+
+
+  /* Thumbnail hot deal
+  /* ========================================================================== */
+  
+  .thumbnail-hot-deal {
+    .caption {
+      padding-top: 30px;
+    }
+    .caption-title {
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+    .price {
+      margin-top: 15px;
+      font-size: 24px;
+      font-weight: 900;
+      del {
+        font-size: 22px;
+        font-weight: 400;
+      }
+    }
+  }
+  .hot-deals-carousel {
+    .owl-theme {
+      .owl-controls {
+        .owl-dots {
+          .owl-dot {
+            span {
+              background-color: #a5abb7;
+              border-radius: 0;
+              margin-left: 1px;
+              margin-right: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .hot-deals-carousel .owl-theme .owl-controls .owl-dots .owl-dot:hover span,
+    .hot-deals-carousel .owl-theme .owl-controls .owl-dots .owl-dot.active span {
+    background-color: #14181c;
+  }
+  

@@ -1,0 +1,75 @@
+[data-bs-theme='blue'] {
+  --bs-primary: #0d6efd;
+  --bs-primary-rgb: 13, 110, 253;
+}
+
+[data-bs-theme='indigo'] {
+  --bs-primary: #6610f2;
+  --bs-primary-rgb: 102, 16, 242;
+}
+
+[data-bs-theme='purple'] {
+  --bs-primary: #6f42c1;
+  --bs-primary-rgb: 111, 66, 193;
+}
+
+[data-bs-theme='pink'] {
+  --bs-primary: #d63384;
+  --bs-primary-rgb: 214, 51, 132;
+}
+
+[data-bs-theme='red'] {
+  --bs-primary: #dc3545;
+  --bs-primary-rgb: 220, 53, 69;
+}
+
+[data-bs-theme='orange'] {
+  --bs-primary: #fd7e14;
+  --bs-primary-rgb: 253, 126, 20;
+}
+
+[data-bs-theme='yellow'] {
+  --bs-primary: #ffc107;
+  --bs-primary-rgb: 255, 193, 7;
+}
+
+[data-bs-theme='green'] {
+  --bs-primary: #198754;
+  --bs-primary-rgb: 25, 135, 84;
+}
+
+[data-bs-theme='teal'] {
+  --bs-primary: #20c997;
+  --bs-primary-rgb: 32, 201, 151;
+}
+
+[data-bs-theme='cyan'] {
+  --bs-primary: #0dcaf0;
+  --bs-primary-rgb: 13, 202, 240;
+}
+
+[data-bs-theme='black'] {
+  --bs-primary: #000;
+  --bs-primary-rgb: 0, 0, 0;
+}
+
+[data-bs-theme='white'] {
+  --bs-primary: #fff;
+  --bs-primary-rgb: 255, 255, 255;
+}
+
+[data-bs-theme='gray'] {
+  --bs-primary: #6c757d;
+  --bs-primary-rgb: 108, 117, 125;
+}
+
+[data-bs-theme='gray-dark'] {
+  --bs-primary: #343a40;
+  --bs-primary-rgb: 52, 58, 64;
+}
+
+.color-swatch {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=colors.css.map */

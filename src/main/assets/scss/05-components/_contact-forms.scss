@@ -1,0 +1,119 @@
+/* 5.14 */
+/* Contact form
+/* ========================================================================== */
+.page-section {
+	&.contact {
+		background: url(../img/preview/page-section-contact-2.jpg) center top no-repeat;
+		background-size: cover;
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: rgba(0, 0, 0, 0.5);
+		}
+		& > .container {
+			position: relative;
+			z-index: 1;
+		}
+	}
+}
+.dark {
+	#contact-form {
+		.form-control {
+			background: rgba(20, 24, 28, 0.8);
+			border: 1px solid rgba(20, 24, 28, 0);
+			color: #ffffff;
+			&:focus {
+				background: rgba(20, 24, 28, 0.5);
+				border: 1px solid rgba(20, 24, 28, 0.5);
+			}
+		}
+	}
+}
+#contact-form {
+	textarea {
+		&.form-control {
+			height: 180px;
+		}
+	}
+	.alert {
+		margin-left: 15px;
+		margin-right: 15px;
+		padding: 10px 15px;
+		border-color: var(--bs-primary);
+		background-color: var(--bs-primary);
+		color: #ffffff;
+	}
+	.tooltip {
+		left: 15px !important;
+	}
+	.tooltip-inner {
+		border-radius: 0;
+		padding: 10px 20px;
+		background-color: #000000;
+	}
+	.tooltip-arrow {
+		border-top-color: #000000;
+	}
+	.form-control {
+		height: 40px;
+	}
+	.has-icon {
+		.form-control {
+			padding-right: 40px;
+		}
+	}
+	.form-control-icon {
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+	}
+	.form-button-submit {
+		max-width: none;
+	}
+}
+
+
+  /* Contact info
+  /* ========================================================================== */
+
+  .contact-info {
+    .media {
+      .fa {
+        padding: 0;
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 40px;
+        border-radius: 20px;
+        margin-right: 15px;
+        text-align: center;
+        background-color: #d3d3d3;
+        color: #ffffff;
+      }
+    }
+    .media-list {
+      margin-bottom: 30px;
+    }
+    .media-body {
+      line-height: 22px;
+    }
+  }
+  .contact-list {
+    .media {
+      .fa {
+        min-width: 18px;
+        text-align: center;
+      }
+    }
+    .media-left {
+      margin-right: 15px;
+    }
+    .media-right {
+      margin-left: 15px;
+    }
+  }  

@@ -1,0 +1,18 @@
+/* 1.2 */
+/* Global properties (body, common classes, structure etc)
+/* ========================================================================== */
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	line-height: 1.6;
+	background: #fbfbfb;
+	color: #5c5c5c;
+	-webkit-font-kerning: auto;
+	-webkit-font-smoothing: antialiased;
+	-webkit-backface-visibility: visible !important;
+	position: relative;
+	overflow-x: hidden;
+	&.boxed {
+		background: #fbfbfb;
+	}
+}

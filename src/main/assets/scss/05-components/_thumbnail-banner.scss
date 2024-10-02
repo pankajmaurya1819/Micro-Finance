@@ -1,0 +1,225 @@
+/* Thumbnail banner
+/* ========================================================================== */
+
+.thumbnail.thumbnail-banner .media,
+.thumbnail.thumbnail-banner .media .media-link,
+.thumbnail.thumbnail-banner .media .caption {
+	height: 100%;
+}
+.thumbnail {
+	&.thumbnail-banner {
+		& + .thumbnail {
+			&.thumbnail-banner {
+				margin-top: 30px;
+			}
+		}
+		.media-link {
+			text-align: left;
+		}
+		.caption {
+			padding: 0;
+		}
+		.caption-wrapper {
+			padding: 15px;
+		}
+		.caption-inner {
+			border: solid 1px #ffffff;
+			padding: 15px;
+		}
+		.btn {
+			margin-top: 10px;
+		}
+		.btn-theme {
+			border-color: #14181c;
+			background-color: #14181c;
+			&:hover {
+				background-color: var(--bs-primary);
+				border-color: var(--bs-primary);
+			}
+		}
+		&.size-1x1 {
+			height: 170px;
+		}
+		&.size-2x3 {
+			height: 270px;
+		}
+		&.size-3x3 {
+			height: 570px;
+		}
+		&.size-1x1-b {
+			height: 270px;
+		}
+		&.size-1x3-b {
+			height: 270px;
+		}
+	}
+}
+.col-md-3 {
+	.thumbnail {
+		&.thumbnail-banner {
+			.caption-inner {
+				padding: 15px 2px;
+			}
+			.caption-sub-title {
+				span {
+					padding: 8px 7px;
+				}
+			}
+		}
+	}
+}
+.thumbnail.thumbnail-banner .caption-title,
+.thumbnail.thumbnail-banner .caption-sub-title {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.1;
+	text-transform: uppercase;
+	margin: 0 0 1px 0;
+	color: #14181c;
+}
+.thumbnail.thumbnail-banner .caption-title span,
+.thumbnail.thumbnail-banner .caption-sub-title span {
+	display: inline-block;
+	padding: 8px 12px;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+.thumbnail-banner {
+	.media {
+		img {
+			-webkit-transform: scale(1);
+			-ms-transform: scale(1);
+			transform: scale(1);
+			-webkit-transition-duration: .4s;
+			transition-duration: .4s;
+			position: relative;
+		}
+	}
+	.media-link {
+		.img-bg {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			z-index: -1;
+			background-image: url('');
+			background-position: 50% 50%;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			background-size: cover;
+			-webkit-transition: all .5s;
+			-moz-transition: all .5s;
+			transition: all .5s;
+			-webkit-transform: scale(1);
+			-moz-transform: scale(1);
+			transform: scale(1);
+		}
+		&:hover {
+			.img-bg {
+				-webkit-transform: scale(1.2, 1.2);
+				-moz-transform: scale(1.2, 1.2);
+				transform: scale(1.2, 1.2);
+			}
+		}
+	}
+	.caption {
+		-webkit-transition: all .5s;
+		-moz-transition: all .5s;
+		transition: all .5s;
+		background-color: rgba(230, 0, 0, 0);
+	}
+	&.alt-font {
+		.caption-title {
+			font-family: 'Raleway', sans-serif;
+			font-style: italic;
+			font-weight: 400;
+			font-size: 24px;
+			span {
+				padding-top: 5px;
+				padding-bottom: 5px;
+				background-color: rgba(255, 255, 255, 0.3);
+			}
+		}
+		.caption-sub-title {
+			font-family: 'Raleway', sans-serif;
+			font-weight: 400;
+			font-size: 18px;
+			span {
+				padding-top: 5px;
+				padding-bottom: 5px;
+				background-color: rgba(255, 255, 255, 0.3);
+			}
+		}
+		.btn-theme-sm {
+			font-size: 11px;
+		}
+		&.big-text {
+			.caption-title {
+				font-size: 48px;
+			}
+			.caption-sub-title {
+				font-size: 44px;
+			}
+		}
+	}
+}
+.thumbnail-banner.hover .media img,
+.thumbnail-banner:hover .media img {
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.thumbnail-banner.hover .btn-theme,
+.thumbnail-banner:hover .btn-theme {
+	-webkit-animation: pulse .4s;
+	animation: pulse .4s;
+}
+.thumbnail-banner.hover .caption,
+.thumbnail-banner:hover .caption {
+	background-color: rgba(230, 0, 0, 0.3);
+}
+
+@media (min-width: 992px) and (max-width: 1999px) {
+  .thumbnail.thumbnail-banner.size-1x1 {
+    height: 190px;
+  }
+}
+@media (min-width: 480px) and (max-width: 991px) {
+  .thumbnail.thumbnail-banner.size-1x1 {
+    max-width: 280px;
+  }
+}
+@media (min-width: 320px) and (max-width: 479px) {
+  .thumbnail.thumbnail-banner.size-1x1 {
+    height: 190px;
+  }
+}
+.thumbnail.thumbnail-banner.size-1x3 {
+  height: 170px;
+}
+@media (min-width: 992px) and (max-width: 1999px) {
+  .thumbnail.thumbnail-banner.size-1x3 {
+    height: 190px;
+  }
+}
+@media (min-width: 320px) and (max-width: 479px) {
+  .thumbnail.thumbnail-banner.size-1x3 {
+    height: 190px;
+  }
+}
+
+@media (max-width: 991px) {
+  .thumbnail.thumbnail-banner {
+    max-width: 555px;
+  }
+}
+
+@media (max-width: 640px) {
+  .thumbnail-banner.alt-font.big-text .caption-sub-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .thumbnail-banner.alt-font.big-text .caption-title {
+    font-size: 28px;
+  }
+}

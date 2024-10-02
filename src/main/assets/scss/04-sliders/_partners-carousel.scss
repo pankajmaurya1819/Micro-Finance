@@ -1,0 +1,82 @@
+/* 4.2 */
+/* Partners carousel / OwlCarousel
+/* ========================================================================== */
+.partners-carousel {
+	.owl-carousel {
+		div {
+			a {
+				display: block;
+				text-align: center;
+				border: solid 3px #f3f4f6;
+				background-color: #f3f4f6;
+				padding: 20px;
+				margin: 1px;
+				-webkit-transition: all 0.65s ease-in-out;
+				transition: all 0.65s ease-in-out;
+				&:hover {
+					border: solid 3px #14181c;
+				}
+				img {
+					display: inline-block;
+					max-width: 100%;
+				}
+			}
+		}
+		.owl-item {
+			img {
+				width: auto;
+			}
+		}
+	}
+		
+	.owl-nav {
+		[class*="owl-"] {
+			background-color: transparent;
+			border-radius: 0;
+			margin: 0;
+			padding: 0;
+			line-height: 1;
+
+		}
+		.owl-prev {
+			left: -50px !important;;
+			margin-top: -16px !important;
+		}
+		.owl-next {
+			right: -50px !important;;
+			margin-top: -16px !important;
+		}
+	}
+	.owl-dots {
+		line-height: 1;
+	}	
+	
+	
+}
+.partners-carousel .owl-prev,
+  .partners-carousel .owl-next {
+	position: absolute;
+	top: 50%;
+	border: 3px solid #e9e9e9 !important;
+	color: #e9e9e9;
+	height: 37px;
+	width: 37px;
+	line-height: 37px;
+	text-align: center;
+}
+.partners-carousel .owl-prev .fa,
+  .partners-carousel .owl-next .fa {
+	color: #e9e9e9;
+	font-size: 24px !important;
+	line-height: 30px;
+}
+.partners-carousel .owl-prev:hover,
+  .partners-carousel .owl-next:hover {
+	border-color: #000000 !important;
+	// background-color: transparent !important;
+	color: #000000;
+}
+.partners-carousel .owl-prev:hover .fa,
+  .partners-carousel .owl-next:hover .fa {
+	color: #000000 !important;
+}

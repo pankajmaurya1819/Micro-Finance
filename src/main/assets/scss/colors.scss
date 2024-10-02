@@ -1,0 +1,24 @@
+// scss-docs-start import-stack
+// Configuration
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+$colors-rgb: map-loop($colors, to-rgb, "$value");
+@each $color, $value in $colors {
+    $colorRGB: map-get($colors-rgb, #{$color});
+    [data-bs-theme='#{$color}'] {
+        --#{$prefix}primary: #{$value};
+        --#{$prefix}primary-rgb: #{$colorRGB};
+    }
+   
+}
+.color-swatch{
+    cursor: pointer;
+}
+
+
+
+

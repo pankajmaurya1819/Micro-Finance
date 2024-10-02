@@ -1,0 +1,68 @@
+$enable-negative-margins:     true;
+
+$primary:#e60000;
+
+// scss-docs-start color-variables
+$blue:    #0d6efd !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #d63384 !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #198754 !default;
+$teal:    #20c997 !default;
+$cyan:    #0dcaf0 !default;
+$black:    #000 !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$white:    #fff !default;
+
+
+// scss-docs-end color-variables
+$colors: (
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "black":      $black,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800,
+  "default":    $primary
+);
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  10: $spacer * .625,  
+  20: $spacer * 1.25,
+  30: $spacer * 1.875,
+  40: $spacer * 2.5,  
+  60: $spacer * 3.75,
+  70: $spacer * 4.375,
+  80: $spacer * 5,
+  90: $spacer * 5.625,
+  100: $spacer * 6.25,
+  120: $spacer * 7.5,
+  140: $spacer * 8.75,
+  150: $spacer * 9.375,
+  180: $spacer * 11.25,
+  200: $spacer * 12.5,
+  230: $spacer * 14.375,
+  250: $spacer * 15.625,
+  300: $spacer * 18.75,
+  350: $spacer * 21.87,
+);

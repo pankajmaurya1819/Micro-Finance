@@ -1,0 +1,75 @@
+/* 5.3 */
+/* Message box
+/* ========================================================================== */
+.message-box {
+	padding: 15px;
+	position: relative;
+	text-align: center;
+	background-color: var(--bs-primary);
+	color: #ffffff;
+	h2 {
+		font-size: 30px;
+		font-weight: 900;
+		text-transform: uppercase;
+		margin: 0;
+		color: #ffffff;
+	}
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+	}
+	.message-box-inner {
+		border: solid 1px #ffffff;
+		padding: 20px 15px;
+		position: relative;
+		z-index: 1;
+	}
+	&.alt {
+		padding: 12px;
+		text-align: left;
+		background-color: #a5abb7;
+		.message-box-inner {
+			padding: 10px 15px;
+		}
+		h2 {
+			font-size: 18px;
+			font-weight: bold;
+		}
+		.btn {
+			font-size: 11px;
+			border-color: #ffffff;
+			background-color: #ffffff;
+			color: #14181c;
+			margin-top: -6px;
+			margin-left: 30px;
+			&:hover {
+				border-color: #14181c;
+				background-color: #14181c;
+				color: #ffffff;
+			}
+		}
+	}
+	&.clear {
+		padding: 0;
+		background: none;
+		color: #14181c;
+		h2 {
+			font-size: 24px;
+			line-height: 30px;
+			font-weight: 300;
+			text-transform: none;
+			color: #14181c;
+		}
+		.message-box-inner {
+			padding: 30px 0;
+			border: solid 1px #d3d3d3;
+			border-left: none;
+			border-right: none;
+		}
+	}
+}

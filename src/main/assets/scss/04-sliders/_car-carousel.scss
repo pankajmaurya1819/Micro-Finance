@@ -1,0 +1,75 @@
+  /* Car carousel / OwlCarousel
+  /* ========================================================================== */
+
+.car-carousel {
+	&.owl-theme {
+		.owl-controls {
+			margin: 0 !important;
+			.owl-nav {
+				[class*=owl-] {
+					position: absolute;
+					top: 50%;
+					margin: -20px 0 0 0;
+					padding: 0;
+					width: 40px;
+					height: 40px;
+					border-radius: 0;
+					font-size: 30px;
+					line-height: 30px;
+					border: solid 3px #14181c;
+					background: transparent;
+					color: #14181c;
+					-webkit-transform: rotate(45deg);
+					-ms-transform: rotate(45deg);
+					-o-transform: rotate(45deg);
+					transform: rotate(45deg);
+					.fa {
+						-webkit-transform: rotate(-45deg);
+						-ms-transform: rotate(-45deg);
+						-o-transform: rotate(-45deg);
+						transform: rotate(-45deg);
+					}
+				}
+				[class*=owl-]:hover {
+					background: #14181c;
+					color: #ffffff;
+				}
+				.owl-prev {
+					left: -60px;
+				}
+				.owl-next {
+					right: -60px;
+				}
+			}
+			.owl-dots {
+				position: absolute;
+				width: 100%;
+				bottom: 0;
+				.owl-dot {
+					span {
+						background-color: #a5abb7;
+					}
+				}
+			}
+		}
+	}
+}
+.car-carousel.owl-theme .owl-controls .owl-dots .owl-dot:hover span,
+  .car-carousel.owl-theme .owl-controls .owl-dots .owl-dot.active span {
+	background-color: #14181c;
+}
+
+  @media (max-width: 639px) {
+    .car-carousel.owl-theme .owl-controls {
+      display: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .car-carousel.owl-theme .owl-controls .owl-nav .owl-prev {
+      left: 0;
+    }
+    .car-carousel.owl-theme .owl-controls .owl-nav .owl-next {
+      right: 0;
+    }
+  }

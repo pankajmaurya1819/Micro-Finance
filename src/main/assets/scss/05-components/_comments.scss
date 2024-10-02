@@ -1,0 +1,153 @@
+/* 5.10 */
+/* Comments
+/* ========================================================================== */
+
+.comments {
+margin-top: 30px;
+margin-bottom: 30px;
+.media {
+	& + .media {
+		margin-top: 20px;
+	}
+}
+}
+.comment {
+border: solid 1px #e9e9e9;
+-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+padding: 20px;
+.comment {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+}
+.comment-avatar {
+img {
+	width: 70px;
+}
+}
+.pull-left {
+&.comment-avatar {
+	margin-right: 10px;
+}
+}
+.pull-right {
+&.comment-avatar {
+	margin-left: 10px;
+}
+}
+.comment-meta {
+padding-bottom: 20px;
+margin-bottom: 30px;
+position: relative;
+&:after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 70px;
+	height: 1px;
+	background-color: #7f7f7f;
+}
+}
+.comment-author {
+font-size: 15px;
+font-weight: 700;
+color: #14181c;
+display: flex;
+justify-content: space-between;
+a {
+	color: #14181c;
+	&:hover {
+		color: var(--bs-primary);
+	}
+}
+}
+.comment-date {
+
+font-size: 14px;
+font-weight: 400;
+text-transform: uppercase;
+color: #a5abb7;
+.fa {
+	color: var(--bs-primary);
+	margin-left: 10px;
+}
+}
+.comment-text {
+font-size: 15px;
+line-height: 24px;
+margin-bottom: 20px;
+}
+.comment-reply {
+font-size: 14px;
+line-height: 18px;
+text-transform: uppercase;
+padding: 10px;
+margin-bottom: 0;
+background-color: #f9fafb;
+color: #a5abb7;
+display: flex;
+justify-content: space-between;
+a {
+	color: #a5abb7;
+	&:hover {
+		color: #14181c;
+	}
+}
+.fa {
+	color: #14181c;	
+}
+}
+.comments-form {
+padding: 20px 20px 0 20px;
+border: solid 1px #e9e9e9;
+-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+& > .block-title {
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: 15px;
+	line-height: 1;
+}
+.form-group {
+	margin-bottom: 20px;
+}
+.form-control {
+	height: 50px;
+	color: #14181c;
+	border-color: #f9fafb;
+	background-color: #f9fafb;
+	&:focus {
+		border-color: #14181c;
+	}
+}
+textarea {
+	&.form-control {
+		height: 200px;
+	}
+}
+::-webkit-input-placeholder {
+	color: #14181c !important;
+}
+:-moz-placeholder {
+	color: #14181c !important;
+}
+::-moz-placeholder {
+	color: #14181c !important;
+}
+:-ms-input-placeholder {
+	color: #14181c !important;
+}
+}
+
+@media (max-width: 479px) {
+.comment-avatar img {
+	width: 24px;
+	height: auto;
+}
+}
