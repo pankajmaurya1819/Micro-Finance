@@ -40,7 +40,8 @@ import jakarta.servlet.http.HttpSession;
 
 @Controller
 public class CustomerController {
-// this is local system
+
+// only check the 
 	Logger logger = LogManager.getLogger(CustomerController.class);
 
 	@Autowired
