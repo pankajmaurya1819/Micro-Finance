@@ -84,6 +84,11 @@ public class CustomerController {
 		return "signin";
 	}
 	
+	@GetMapping("/payment")
+	public String payment() {
+		return " ";
+	}
+	
 	@GetMapping("/new-loan")
 	public String formData(Model model, HttpServletRequest request) {
 		try {
