@@ -73,7 +73,7 @@ public class CustomerController {
 	@Value("${microfinance.db.databaseName}")
 	private String databaseName;
 
-	public List<Customer> todayPaymentList = null;
+	public List<Customer> todayPaymentList  = null;
 
 	HttpSession session = null;
 
@@ -82,6 +82,11 @@ public class CustomerController {
 		
 		logger.info("login page");
 		return "signin";
+	}
+	
+	@GetMapping("/payment")
+	public String payment() {
+		return " ";
 	}
 	
 	@GetMapping("/new-loan")
