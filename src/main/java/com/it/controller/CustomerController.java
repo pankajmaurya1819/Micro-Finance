@@ -40,7 +40,7 @@ import jakarta.servlet.http.HttpSession;
 
 @Controller
 public class CustomerController {
-//change in controller class
+//change in controller class 
 // only check the 
 	Logger logger = LogManager.getLogger(CustomerController.class);
 
