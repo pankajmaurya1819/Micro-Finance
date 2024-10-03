@@ -42,6 +42,7 @@ import jakarta.servlet.http.HttpSession;
 public class CustomerController {
 //change in controller class 
 // only check the 
+	//  check the 
 	Logger logger = LogManager.getLogger(CustomerController.class);
 
 	@Autowired
