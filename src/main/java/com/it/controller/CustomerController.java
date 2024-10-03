@@ -73,7 +73,7 @@ public class CustomerController {
 	@Value("${microfinance.db.databaseName}")
 	private String databaseName;
 
-	public List<Customer> todayPaymentList = null;
+	public List<Customer> todayPaymentList  = null;
 
 	HttpSession session = null;
 
